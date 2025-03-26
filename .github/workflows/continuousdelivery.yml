@@ -18,7 +18,7 @@ jobs:
         with:
           name: projetozipado.zip
           path: |
-            '**.dart'
+            '**.dart
             README.md
   deployment:
     runs-on: ubuntu-latest
