@@ -1,0 +1,22 @@
+name: Dart - Continuous Delivery PUCPR DevOps
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  delivery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+
+      - name: Simulando continous delivery
+        uses: actions/upload-artifact@v4
+        with:
+          name: projetozipado.zip
+          path: |
+            '**.dart'
+            README.md

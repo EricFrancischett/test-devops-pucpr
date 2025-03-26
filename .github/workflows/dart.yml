@@ -6,8 +6,6 @@
 name: Dart - Continuous Integration PUCPR DevOps
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
